@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ads</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        #popup {
+            display: none;
+        }
+        #popup::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        @media screen and (max-width: 768px) {
+            .min-h-screen {
+                background-position: center;
+             }
+        }
+    </style>
+        <div class="min-h-screen flex items-center justify-center w-full"
+            style="background: linear-gradient(356deg, #1C1C1C -18.98%, rgba(217, 217, 217, 0.00) 94.07%),
+            url('/images/bg-cover.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center ;"
+            >
+        <img src="/images/Rw.png" class="w-[188px] absolute top-0 h-[188px]" alt="">
+        <div class="text-center p-10 md:p-0 max-w-4xl leading-10 tracking-widest relative mt-[200px]">
+            <h1 class="text-4xl lg:text-[52px] font-bold text-[#fff]"
+                style="line-height: 1.2;">DISCOVER NEW OPPORTUNITIES AND JUMPSTART YOUR BUSINESS</h1>
+
+            <h2 class="text-2xl p-3 lg:text-[30px] font-normal mt-[9px] text-[#fff]"
+                >GROWTH WITH YOUR TRUSTED PARTNER!</h2>
+            <button id="openPopup" class="bg-[#009E48] text-sm font-bold mt-[27px] text-[#fff] p-[9px] leading-[140%] rounded-[7px]"
+                style="font-family: 'Inter', sans-serif;">Join the #1 Real Estate Agent in Indonesia</button>
+        </div>
+    </div>
+
+    <div class="max-w-4xl px-6 md:px-0  md:p-0 mx-auto">
+        <div class="flex items-center justify-between mt-10 md:mt-[72px] mb-5 md:mb-[40px] md:gap-[15px]">
+            <h1 class="text-xl md:text-[46px] tracking-wide text-[#3A3A3A] font-bold font-inter">About Ray White</h1>
+            <div class="bg-[#FFD60A] w-1/2 h-[18px] md:h-[30px]"></div>
+        </div>
+
+        <div class="text-[#3a3a3a] space-y-3.5 font-light mx-auto flex flex-col leading-8 items-center justify-center text-base md:text-[20px]">
+            <p>Pertumbuhan adalah bagian integral dari bisnis kami yang merupakan core value yang tak terpisahkan dari
+                sebuah perjalanan kesuksesan yang telah kami raih. Jadilah bagian dari kami dan mari berkembang bersama
+                Ray White!</p>
+            <p>
+                Ray White adalah nama keluarga di Australasia, nama yang identik dengan industri properti dan real
+                estate. Didirikan pada tahun 1902 di kota pedesaan kecil Crows Nest di Queensland, kini Ray White telah
+                berkembang menjadi bisnis real estate paling sukses di Australasia, dengan lebih dari 1.000 kantor
+                individu di seluruh Australasia, Selandia Baru, Indonesia, Tiongkok, Hong Kong, Timur Tengah, dan
+                Atlanta AS.
+            </p>
+            <p>
+                Pada tahun 1997, Ray White (Indonesia) memasuki pasar properti di Indonesia dan memulai bisnis ini
+                dengan menyediakan pelayanan melalui enam kantor franchisee-nya di Jakarta. Saat ini bisnis franchisee
+                Ray White sudah sukses membangun jaringan bisnis ini lebih dari 175 kantor cabang dari 25 kota besar
+                Indonesia dan 4.000 Marketing Executives yang tersebar di Jakarta, Tangerang, Depok, Bekasi, Karawang,
+                Cirebon, Bandung, Semarang, Yogyakarta, Solo, Surabaya, Malang, Bali, Lombok, Pekanbaru, Palembang,
+                Lampung, Balikpapan, Bogor, Manado, Ambon, Jember, Bangka, dan Makassar.
+            </p>
+        </div>
+
+        <div class="border-b-[1px] border-[#D5D5D5] mt-[40px] w-full"></div>
+        
+       <div class="mt-[32px]">
+        <h1 class="text-3xl md:text-[40px] mb-8 font-bold text-center md:text-left text-[#3a3a3a]">Ray White di dunia</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="flex flex-col rounded-[24px] mx-auto md:mx-0 w-[262px] items-center border-[3px] border-[#FFD60A] p-[24px] justify-center text-[#3a3a3a]">
+                <h1 class="font-bold text-5xl md:text-[50px]">1000</h1>
+                <p class="text-lg mt-[20px] md:text-[23px]">Kantor Cabang</p>
+            </div>
+            <div class="flex flex-col rounded-[24px] mx-auto md:mx-0 w-[262px] items-center border-[3px] border-[#FFD60A] p-[24px] justify-center text-[#3a3a3a]">
+                <h1 class="font-bold text-5xl md:text-[50px]">11</h1>
+                <p class="text-lg mt-[20px] md:text-[23px]">Di 11 Negara</p>
+            </div>
+            <div class="flex flex-col rounded-[24px] mx-auto md:mx-0 w-[262px] items-center border-[3px] border-[#FFD60A] p-[24px] justify-center text-[#3a3a3a]">
+                <h1 class="font-bold text-5xl md:text-[50px]">750RB</h1>
+                <p class="text-lg mt-[20px] md:text-[23px]">Properti terjual</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="mt-[32px]">
+        <h1 class="text-3xl md:text-[40px] mb-8 font-bold text-center md:text-left text-[#3a3a3a]">Ray White di Indonesia</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="flex flex-col rounded-[24px] mx-auto md:mx-0 w-[262px] items-center border-[3px] border-[#FFD60A] p-[24px] justify-center text-[#3a3a3a]">
+                <h1 class="font-bold text-5xl md:text-[50px]">175</h1>
+                <p class="text-lg mt-[20px] md:text-[23px]">Kantor Cabang</p>
+            </div>
+            <div class="flex flex-col rounded-[24px] mx-auto md:mx-0 w-[262px] items-center border-[3px] border-[#FFD60A] p-[24px] justify-center text-[#3a3a3a]">
+                <h1 class="font-bold  text-5xl md:text-[50px]">25</h1>
+                <p class="text-lg mt-[20px] md:text-[23px]">Kota Indonesia</p>
+            </div> 
+            <div class="flex flex-col rounded-[24px] mx-auto md:mx-0 w-[262px] items-center border-[3px] border-[#FFD60A] p-[24px] justify-center text-[#3a3a3a]">
+                <h1 class="font-bold text-5xl md:text-[50px]">4000</h1>
+                <p class="text-lg mt-[20px] md:text-[23px]">Marketing Executives</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="border-b-[1px] border-[#D5D5D5] my-[40px] w-full"></div>
+
+       <div>
+        <div class="text-[#3a3a3a] text-left">
+            <h1 class="font-bold text-3xl mb-5 md:text-[46px] text-center md:text-left">Our Achievement</h1>
+            <p class="font-light text-base leading-8 md:text-[20px]">Layanan pemasaran kami dirancang untuk membantu Anda mencapai tujuan menjual lebih banyak properti residensial maupun komersial. Berikut adalah beberapa penghargaan yang berhasil kami peroleh selama 26 tahun hadir di Indonesia:</p>
+        </div>
+
+        <div class="text-[#3a3a3a] mt-[40px]">
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Top Brand Awards 2013 - 2023</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Corporate Image Awards 2012 - 2023</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Franchise Business Opportunity Market Leader 2014 - 2023</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Indonesia Franchise Of The Year 2019, 2022 - 2023</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Social Media Awards 2015 - 2023</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Digital Marketing Award 2022 - 2023</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Franchise Top of Mind 2017</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Top Franchise 2018</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Top Product Property Awards 2016</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Market Leader 2014 - 2018</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+                <div class="border-l-2 border-[#FFD60A] h-[40px]"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">Indonesia Digital Popular Brand Award 2016</h1>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="items-center flex flex-col">
+                <div class="w-[15px] h-[15px] bg-[#FFD60A] rounded-full"></div>
+            </div>
+            <h1 class="text-lg md:text-[24px] -mt-1.5 font-semibold">The Best Franchise Award 2017</h1>
+          </div>
+        </div>
+
+       </div>
+    </div>
+
+    <div class="w-full px-6 md:px-0 md:p-0 my-[72px]" style="mix-blend-mode: multiply; background: rgba(255, 214, 10, 0.85)">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex py-[72px] gap-5">
+                <h1 class="text-[160px] hidden md:block font-extrabold -mt-12 text-[#3a3a3a]">“</h1>
+                <div class="text-[#3a3a3a] space-y-[18px]">
+                    <h1 class="text-3xl md:text-[45px] font-bold">BIGGER. STRONGER. TOGETHER</h1>
+                    <p class="text-base md:text-[20px] leading-8 font-light">Kami memahami bahwa memberikan pengalaman pelanggan yang luar biasa adalah kunci kesuksesan Anda, dan tim kami berdedikasi untuk mewujudkannya setiap saat. Dari membuat iklan yang tidak hanya relevant namun juga menarik hingga memanfaatkan sistem teknologi terbaik kami dalam pemasaran terkini, kami memiliki pengetahuan dan keahlian secara eksklusif untuk membantu Anda dalam mensukseskan bisnis Anda di pasar properti.</p>
+                    <p class="text-base md:text-[20px] font-semibold">Selling property fast, secure, and reliable with Ray White</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- YOUTUBE -->
+
+    <div class="max-w-4xl p-6 md:p-0 md:p-0 mx-auto">
+        <div class="rounded-[20px] w-full h-72 md:h-[514px]">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RNyVmqne5js?si=IaD4tsAk-EtDISrO" title="Join Peluang Bisnis Franchise Ray White Indonesia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div class="flex mt-[43px] justify-center">
+            <h1 class="text-[20px] md:text-[46px] rounded-[10px] text-center p-4 bg-[#FFD60A] w-[706px] text-[#3a3a3a] font-bold">ASK MORE. DO MORE. BE MORE</h1>
+        </div>
+
+        <div class="border-b-[1px] border-[#D5D5D5] my-[62px] w-full"></div>
+
+        <div class="text-[#3a3a3a] border border-[#FFD60A] mb-[52px] rounded-[15px] text-center p-[30px] flex flex-col items-center justify-center">
+            <h1 class="text-3xl md:text-[40px] font-bold">Our Mission</h1>
+            <p class="text-2xl md:text-[30px] md:leading-[45px] font-light mt-[22px]">To become the most dominant agent <br/> in every market place we trade</p>
+        </div>
+
+        <div class="text-[#3a3a3a] text-left font-light text-base leading-8 md:text-[20px] space-y-[30px]">
+            <p>
+                Ray White memiliki komitmen dalam menjawab setiap kebutuhan jual-beli-sewa-lelang properti serta penanganan di bagian pemasaran Projects dan Property Management serta secara konsisten terus berinovasi demi mengedepankan dan menjalankan bisnisnya termasuk dalam cara-cara pemasaran properti. Untuk mencapai hal ini, Ray White mengerti bahwa pelanggan selalu menjadi yang terutama.
+            </p>
+            <p>
+                Kami memiliki komitmen dalam menjawab setiap kebutuhan Anda, termasuk pembelian, penjualan, investasi dan manajemen properti. Secara konsisten kami terus bertahan untuk tetap dynamic dan innovative dalam setiap transaksi real estate. Tak hanya itu, kami berkomitmen untuk selalu menciptakan cara yang lebih efektif dan efisien dalam mengantisipasi dan menggapai peluang yang ada melalui kecepatan dan ketetapan dalam membaca dinamika pasar.
+            </p>
+            <p>
+                Tidak hanya sampai disitu, Ray White juga memberikan pelayanan yang terbaik bagi para kliennya. Kami akan terus membangun team real estate profesional yang paling bermutu, fokus pada pelanggan, paham akan aturan main, dan memberikan pengetahuan serta pedoman mengenai bagaimana memenuhi kebutuhan para klien terhadap properti secara menyeluruh.
+            </p>
+        </div>
+
+        <div class="flex justify-center my-[42px]">
+            <button id="bookPopup" class="text-base md:text-[22px] py-[8px] px-[30px] rounded-[7px] font-bold bg-[#009E48] text-[#fff]" style="font-family: 'Inter', sans-serif;">Book an appointment!</button>
+        </div>
+
+        <div class="border-b-[1px] border-[#D5D5D5] my-[40px] w-full"></div>
+
+        <div class="flex items-center justify-between gap-[15px]">
+            <h1 class="text-2xl md:text-4xl md:text-[46px] text-[#3A3A3A] font-bold font-inter">Why Wait?</h1>
+            <div class="bg-[#FFD60A] w-1/2 h-[18px] md:h-[30px]"></div>
+        </div>
+
+        <div class="text-[#3a3a3a] text-left space-y-[22px] leading-8 font-light text-base mt-5 md:text-[20px]">
+            <p>
+                Apakah Anda tertarik untuk bergabung dalam bisnis agen properti, dimana Anda berpeluang besar dalam memasarkan produk-produk residential baik marketing project maupun secondary property. Melalui jaringan bisnis Ray White yang luas, Anda juga berpeluang memasarkan produk-produk properti komersial, bahkan properti yang berada di luar negeri, seperti properti Australia dan Singapura.
+            </p>
+            <p>
+                Dengan menjadi Franchisee di Ray White, Anda tidak akan berjalan sendirian. Kami akan secara berkelanjutan mendorong bisnis Anda untuk lebih maju dengan memberikan penawaran berupa:
+            </p>
+           <div class="px-8">
+            <ul class="list-inside list-disc">
+                <li>Pelatihan komprehensif</li>
+                <li>Sistem pendukung yang up-to-date</li>
+                <li>Sistem manajemen software yang lengkap</li>
+                <li>Kampanye pemasaran</li>
+                <li>Mentoring dengan lebih dari 1.000 kantor di seluruh Australasia</li>
+            </ul>
+           </div>
+           <p>
+            Dalam mendukung eksistensinya sebagai agen properti terbaik di Indonesia, Ray White berkomitmen untuk menyediakan teknologi mutakhir dan strategi bisnis yang sudah terbukti sukses berkelanjutan sebagai pemimpin pasar (market leader) di bidangnya. Kami mencari partner bisnis yang berkualitas, operator yang berpengalaman serta marketing executive yang handal dibidangnya dengan segudang prestasi dalam hal penjualan real estate. Jangan lewatkan kesempatan untuk meraih kesuksesan di bidang real estate.
+            Apabila Anda tertarik untuk menjadi partner Ray White dengan menjadi franchisee, Anda dapat menghubungi kontak yang berada di bawah ini untuk diskusi lebih lanjut.
+           </p>
+        </div>
+    </div>
+
+    <div class="bg-[#FFD60A] flex justify-center items-center mx-auto my-[62px] max-w-6xl h-28 md:h-[136px]">
+        <h1 class="text-[#3a3a3a] text-2xl md:text-[42px] text-center md:text-left font-bold">Informasi Franchise</h1>
+    </div>
+    <div class="grid grid-cols-1 px-6 md:px-0 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-4 my-4">
+        <div class="text-[#3a3a3a] rounded-[12px] space-y-[14px] border border-[#FFD60A] p-[24px] font-bold">
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/user.png" alt="Winnie">
+                <h1 class="text-[16px] md:text-[18px]">Winnie</h1>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/phone.png" alt="phone">
+                <h1 class="text-sm md:text-[18px]">+62 817 6450 258</h1>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/email.png" alt="Email">
+                <h1 class="text-[16px] md:text-[18px]">winnie.gunawan@raywhite.co.id</h1>
+            </div>
+        </div>
+        <div class="text-[#3a3a3a] rounded-[12px] space-y-[14px] border border-[#FFD60A] p-[24px] font-bold">
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/user.png" alt="Trisna">
+                <h1 class="text-[16px] md:text-[18px]">Trisna</h1>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/phone.png" alt="phone">
+                <h1 class="text-[16px] md:text-[18px]">+62 817 6450 256</h1>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/email.png" alt="Email">
+                <h1 class="text-[16px] md:text-[18px]">trisna.yany@raywhite.co.id</h1>
+            </div>
+        </div>
+        <div class="text-[#3a3a3a] rounded-[12px] space-y-[14px] border border-[#FFD60A] p-[24px] font-bold">
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/user.png" alt="Levina">
+                <h1 class="text-[16px] md:text-[18px]">Levina</h1>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/phone.png" alt="phone">
+                <h1 class="text-[16px] md:text-[18px]">+62 877 8809 8070</h1>
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <img src="images/email.png" alt="Email">
+                <h1 class="text-[16px] md:text-[18px]">levina.hermansiah@raywhite.co.id</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto max-w-6xl flex justify-center my-[30px] p-[30px] bg-gray-300" >
+        <div class="text-[#3a3a3a] md:flex space-x-6 space-y-2 text-[18px] items-center">
+            <img src="images/lok.png" class="mx-auto" alt="Location">
+            <p class="text-center md:text-left">Sahid Sudirman Center 43rd floor Jl. Jend. Sudirman No.86, Jakarta Pusat 10220</p>
+            <div class="flex items-center justify-center gap-1 md:gap-5">
+                <img src="images/phone.png" alt="phone">
+                <p>(62-21) 2788 9777</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="mx-auto flex flex-col my-2 md:my-16 px-6 md:px-0 max-w-4xl justify-center">
+        <div class="flex items-center justify-between gap-[15px]">
+            <h1 class="text-2xl md:text-[46px] text-[#3A3A3A] font-bold font-inter">Contact Us</h1>
+            <div class="bg-[#FFD60A] w-1/2 h-[18px] md:h-[30px]"></div>
+        </div>
+        <h1 class="text-center text-[#3a3a3a] mt-[28px] text-xl md:text-[25px]">
+            Peluang Lokasi terbaik untuk kantor franchise Ray White:
+        </h1>
+    </div>
+
+    <div class="mx-auto flex flex-col px-6 md:px-0 max-w-5xl my-[63px] justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[44px]">
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">CBD Area (Specialist)</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li >CBD Kuningan/Rasuna Epicentrum</li>
+                    <li>CBD Sudirman/Benhil</li>
+                    <li>CBD Pluit</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Jakarta Selatan</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Lebak Bulus</li>
+                    <li>Permata Hijau</li>
+                    <li>Mampang Raya/Duren Tiga</li>
+                    <li>Casablanca</li>
+                    <li>Jl.Prof.Dr.Supomo</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Jakarta Barat</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Kebon Jeruk/Pejuangan/RCTI</li>
+                    <li>Jelambar</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Jakarta Pusat</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Cempaka Putih</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Jakarta Timur</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Rawamangun</li>
+                    <li>Cipinang</li>
+                    <li>Kalimalang</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Bodetabek</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                  <li>Jatibening</li>
+                  <li>Deltamas</li>
+                  <li>Jababeka</li>
+                  <li>Sentul</li>
+                  <li>Depok</li>
+                  <li>Bogor</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Bandung</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                  <li>Dago</li>
+                  <li>Setia Budi</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Surabaya</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                  <li>Waru</li>
+                  <li>Kenjeran</li>
+                  <li>Rungkut</li>
+                  <li>Margorejo</li>
+                  <li>Bubutan</li>
+                  <li>Ngagel</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">jawa Timur</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                  <li>Yogyakarta</li>
+                  <li>Malang</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Medan</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Polonia</li>
+                    <li>Medan Kita</li>
+                    <li>Setiabudi</li>
+                    <li>Cemara Asri</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Batam</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Batam</li>
+                </ul>
+            </div>
+            <div class="p-5 border text-[#3a3a3a] h-[285px] border-[#FFD60A] rounded-[10px]">
+                <h1 class="text-xl md:text-[25px] font-semibold">Kalimantan</h1>
+                <ul class="list-disc mt-[28px] w-[276px] text-lg md:text-[22px] pl-8">
+                    <li>Ibu Kota Negara Nusantara</li>
+                    <li>Pontianak</li>
+                    <li>Samarinda 2</li>
+                    <li>Tarakan</li>
+                    <li>Banjarmasin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#616161] py-6 px-6 md:px-0 md:py-12">
+        <div class="mx-auto flex-col flex items-center justify-center max-w-7xl">
+            <h1 class="text-xl md:text-2xl lg:text-4xl md:w-[650px] text-center font-semibold text-[#fff]">Selling <span class="text-[#FFD60A]">property fast, secure</span>, and reliable with Ray White </h1>
+            <div class="border-b-2 md:border-b-[2.5px] border-[#D5D5D5] my-6 md:my-12 w-full"></div>
+        </div>
+    
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-4">
+            <div class="space-y-6 md:space-y-0 md:space-x-36 md:flex items-center">
+                <img src="/images/Rw.png" class="w-20 md:w-full mx-auto" alt="raywhite">
+                <div class="space-y-4">
+                    <div class="flex gap-2 md:gap-4 items-center">
+                        <img src="/images/f-phone.png" class="" alt="phone">
+                        <h1 class="text-lg md:text-[24px] text-[#fff]">+62 22 44235 16123</h1>
+                    </div>
+                    <div class="flex gap-2 md:gap-4 items-center">
+                        <img src="/images/f-wa.png" alt="WA">
+                        <h1 class="text-lg md:text-[24px] leading-[140%] text-[#fff]">+62 22 44235 16123</h1>
+                    </div>
+                    <h1 class="text-lg md:text-[24px] text-[#fff]">Contact.me@raywhite.co.id</h1>
+                    <div class="flex gap-2 md:gap-4 items-center">
+                        <img href="https://id.linkedin.com/company/company/ray-white-indonesia/" class="cursor-pointer" target="_blank" src="/images/LinkedIn.png" alt="">
+                        <img href="https://www.instagram.com/raywhiteindonesia/" target="_blank" class="cursor-pointer" src="/images/Instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img src="/images/top.png" alt="TOP BRAND">
+            </div>
+        </div>
+    
+        <div class="border-b-1 md:border-b-[1.5px] border-[#D5D5D5] max-w-7xl mx-auto my-6 md:my-12 w-full"></div>
+    
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <h1 class="text-[#fff] text-sm md:text-base">Copyright © 2022 Ray White Indonesia</h1>
+        </div>
+    </footer>
+    
+    
+        <!-- PopUp -->
+
+        <div id="popup" class="hidden fixed top-0 left-0 w-full h-full bg-opacity-75 bg-gray-900 flex items-center justify-center">
+            <div class="bg-white p-6 text-[#3A3A3A] translate-y-1/3 rounded-md max-w-sm h-[400px] mx-auto">
+                <h1 class="text-xl">Request Free</h1>
+                <h2 class="text-2xl font-bold mb-6">Information</h2>
+                <form id="requestForm" class="flex flex-col items-center">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" class="w-full mb-6 border-b border-gray-300">
+                    <input type="email" id="email" name="email" placeholder="Email" class="w-full mb-6 border-b border-gray-300">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" class="w-full mb-6 border-b border-gray-300">
+                    <input type="text" id="areaOfInterest" name="areaOfInterest" placeholder="Area yang diminati" class="w-full mb-12 border-b border-gray-300">
+        
+                    <button id="submitRequest" class="bg-[#FFD60A] w-full text-sm font-normal text-[#3a3a3a] px-2 py-3 rounded-md">
+                        Proceed To Request
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+    
+   <script>
+        document.getElementById("openPopup").addEventListener("click", function () {
+        document.getElementById("popup").style.display = "block";
+    });
+        document.getElementById("submitRequest").addEventListener("click", function () {
+        document.getElementById("popup").style.display = "none";
+    });
+
+    document.getElementById("bookPopup").addEventListener("click", function () {
+        document.getElementById("popup").style.display = "block";
+    });
+
+   </script>
+</body>
+
+</html>
